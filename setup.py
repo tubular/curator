@@ -22,13 +22,13 @@ def get_version():
     return VERSION
 
 def get_install_requires():
-    res = ['elasticsearch==7.1.0' ]
-    res.append('urllib3>=1.24.2,<1.26')
+    res = ['elasticsearch' ]
+    res.append('urllib3>=1.24.2')
     res.append('requests>=2.20.0')
     res.append('boto3>=1.9.142')
     res.append('requests_aws4auth>=0.9')
-    res.append('click>=6.7,<7.0')
-    res.append('pyyaml==3.13')
+    res.append('click')
+    res.append('pyyaml')
     res.append('voluptuous>=0.9.3')
     res.append('certifi>=2019.9.11')
     res.append('six>=1.11.0')
@@ -134,6 +134,8 @@ try:
             "Programming Language :: Python :: 3.6",
             "Programming Language :: Python :: 3.7",
             "Programming Language :: Python :: 3.8",
+            "Programming Language :: Python :: 3.9",
+            "Programming Language :: Python :: 3.10",
         ],
         test_suite = "test.run_tests.run_all",
         tests_require = ["mock", "nose", "coverage", "nosexcover"],
@@ -173,6 +175,9 @@ except ImportError:
             "Programming Language :: Python :: 3.5",
             "Programming Language :: Python :: 3.6",
             "Programming Language :: Python :: 3.7",
+            "Programming Language :: Python :: 3.8",
+            "Programming Language :: Python :: 3.9",
+            "Programming Language :: Python :: 3.10",
         ],
         test_suite = "test.run_tests.run_all",
         tests_require = ["mock", "nose", "coverage", "nosexcover"]
